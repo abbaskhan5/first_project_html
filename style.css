@@ -1,0 +1,628 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header.navbar {
+    background-color: #d32d27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 5px solid #fabc03;
+}
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+header .nav-links ul li {
+    color: white;
+}
+
+header .sign-on-btn {
+    background-color: white;
+    color: #d32d27;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Main Navigation */
+nav.main-nav {
+    background-color: white;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 50px;
+    
+}
+
+nav.main-nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.main-nav ul li {
+    color: #333;
+}
+
+nav.main-nav ul li.active {
+    border-bottom: 3px solid red;
+    font-weight: bold;
+}
+
+nav.main-nav .sub-menu {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    border-top: 1px solid #fcfcfc;
+    padding-top: 10px;
+}
+/* nav.main-nav .sub-menu:hover{
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding-right: 40px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+} */
+
+
+  
+  /* Main Content */
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #f7f6f5;
+}
+
+.sign-in-box {
+    background-color: rgba(252, 248, 248, 0.417);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.sign-in-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sign-in-box p {
+    font-size: 23px;
+    color: #666;
+}
+
+.sign-in-box input {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    /* display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 20px; */
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.checkbox-container input {
+    /* margin-right: 50px; */
+    margin-right: 170PX;
+    margin-top: 30px;
+}
+
+.sign-in-box .additional-links a {
+
+    display: block;
+    margin-top: 7px;
+    font-size: 15px;
+    color: #333;
+
+
+
+
+}
+
+
+.offer-box {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.offer-box h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.offer-box p {
+    font-size: 18px;
+    color: #666;
+}
+
+.get-started-btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.get-started-btn:hover{
+    background-color: #000;
+    color: white;
+    transition-duration:0,5;
+
+}
+
+.bonus-banner {
+    text-align: center;
+    padding: 20px;
+    color: #822187;
+}
+
+.bonus-banner h1 {
+    font-size: 50px;
+}
+
+.bonus-banner p {
+    font-size: 24px;
+}
+
+  /* Offers Section */
+/* Offers Section Styling */
+.offers-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .offer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    margin: 0 1rem;
+    transition: transform 0.2s;
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-placeholder img {
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: #6b7280;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .learn-more {
+    font-weight: bold;
+    color: #d50000;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .learn-more span {
+    font-size: 1.25rem;
+  }
+  
+  .learn-more:hover {
+    color: #b00000;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .offers-section {
+      flex-direction: column;
+    }
+  
+    .offer-card {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  
+  /* Banner Offer Section */
+  .banner-offer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner-offer-text {
+    max-width: 50%;
+  }
+  
+  .banner-offer-text h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-offer-text p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .banner-button {
+    background-color: #d50000;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .banner-button:hover {
+    background-color: #b00000;
+  }
+  
+  .banner-offer-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .offer-card {
+      width: 100%;
+    }
+  
+    .banner-offer-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .banner-offer-text {
+      max-width: 100%;
+    }
+  
+    .banner-offer-image img {
+      max-width: 100%;
+    }
+  }
+  /* Home Section Styling */
+.home-section {
+    background-image: url('https://images.unsplash.com/photo-1560717848-0b3dd77f1330');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-content {
+    max-width: 50%;
+    padding-left: 2rem;
+  }
+  
+  .home-content h2 {
+    font-size: 2.5rem;
+    color: #2f2f2f;
+    margin-bottom: 1rem;
+  }
+  
+  .home-content p {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-get-started {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    border: 2px solid #2f2f2f;
+    border-radius: 30px;
+    color: #2f2f2f;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .image2{
+    width: 100%;
+    height: 500px;
+  }
+  .btn-get-started:hover {
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-content {
+      max-width: 80%;
+      padding-left: 1rem;
+    }
+  
+    .home-content h2 {
+      font-size: 2rem;
+    }
+  
+    .home-content p {
+      font-size: 1rem;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 380px;
+    text-align: left;
+    overflow: hidden;
+    margin-top:  30px;
+    margin-bottom: 15px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .card a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .card a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+   /* App Promotion Section */
+.app-promo {
+    background: linear-gradient(to right, #4a247e, #2f0744);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.promo-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.promo-image img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.promo-text {
+    max-width: 600px;
+}
+
+.promo-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.promo-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.promo-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.promo-text ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.download-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.app-store-btn, .google-play-btn {
+    background-color: white;
+    color: #4a247e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.screen-image-text {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 20px;
+}
+/* Community Section */
+.community-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.community-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.community-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.community-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.community-text {
+    padding: 20px;
+}
+
+.community-text h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.community-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.community-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.community-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* How Can We Help Section */
+.help-section {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.help-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.help-options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.help-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.help-option p {
+    font-size: 16px;
+    color: #333;
+}
